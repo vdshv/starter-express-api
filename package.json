@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/cyclic-software/starter-express-api#readme",
   "dependencies": {
+    "basic-ftp": "^5.0.2",
+    "body-parser": "^1.20.2",
     "express": "^4.17.1"
   }
 }
