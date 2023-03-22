@@ -53,7 +53,7 @@ app.post('/upload', async (req, res) => {
 
 
       // await client.uploadFrom(decodedImage, `/00-RECEIPT/05-ETIKETS/order-${orderId}__sku-${arr[i]._sticker_product_sku}.png`);
-      await client.uploadFrom(stream, `order-${orderId}__sku-${arr[i]._sticker_product_sku}.jpg`);
+      await client.uploadFrom(stream, `order-${orderId}__sku-${arr[i]._sticker_product_sku}__index-${i}.jpg`);
     }
 
     await client.close();
