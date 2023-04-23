@@ -66,28 +66,6 @@ app.post('/upload', async (req, res) => {
   }
 });
 
-app.post('/update-inventory', async (req, res) => {
-  try {
-    console.log(typeof req.body);
-    console.log(req.body);
-
-    // {
-    //     "orderId": ,
-    //     "lineItems": [
-    //         {
-    //             "_sticker_image": "",
-    //             "_sticker_product_sku": ""
-    //         }
-    //     ]
-    // }
-
-    res.status(200).send('inventory update response');
-    
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Error: inventory update');
-  }
-});
 
 app.listen(process.env.PORT || 3000, () => {
   console.log('Server listening on port 3000');
