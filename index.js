@@ -68,7 +68,9 @@ app.post('/upload', async (req, res) => {
 
 app.post('/update-inventory', async (req, res) => {
   try {
+    console.log(typeof req.body);
     console.log(req.body);
+
     // {
     //     "orderId": ,
     //     "lineItems": [
